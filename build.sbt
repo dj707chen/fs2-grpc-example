@@ -1,6 +1,6 @@
 lazy val root = project.in(file("."))
   .settings(
-    skip in publish := true
+    publish / skip := true
   )
   .aggregate(protobuf, client, server)
 
